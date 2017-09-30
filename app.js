@@ -43,6 +43,9 @@ app.get('/matching',function(req,res){
 });
 
 
+const server = app.listen(8080, () => {
+  const host = server.address().address;
+  const port = server.address().port;
 
-var port =  process.env.PORT || 3000
-app.listen(port);
+  console.log(`Example app listening at http://${host}:${port}`);
+});
