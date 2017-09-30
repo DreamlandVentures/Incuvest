@@ -1,0 +1,23 @@
+{
+  "name": "venturestudio",
+  "version": "1.0.0",
+  "description": "Venture Studio is a project created on the latinx startup weekend.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Venture",
+    "Studio",
+    "designers",
+    "startups"
+  ],
+  "author": "Kevin Reinoso",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "morgan": "^1.9.0"
+  }
+}
