@@ -23,6 +23,7 @@ app.engine('hbs', handlebars({
 }));
 
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 app
   .set('view engine', 'hbs')
