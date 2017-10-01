@@ -18,23 +18,23 @@ $(window).load(function() {
     });
   });
   $('#pinatalink').click(function(){
-    window.location='http://localhost:8080/pinatafc';
+    window.location='https://incuvest-181515.appspot.com/pinatafc';
   });
   $('#kidmotolink').click(function(){
-  window.location='http://localhost:8080/kidmoto';
+  window.location='https://incuvest-181515.appspot.com/kidmoto';
   });
   $('#flydoclink').click(function(){
-    window.location='http://localhost:8080/flydoc';
+    window.location='https://incuvest-181515.appspot.com/flydoc';
   });
   //Login Elements
   $('.logout').click(function(){
-    window.location='http://localhost:8080';
+    window.location='https://incuvest-181515.appspot.com';
   });
   $('.modal-footer').click(function() {
     if ($("#uPassword").val() === '') {
       alert('No password');
     } else {
-      window.location='http://localhost:8080/profile';
+      window.location='https://incuvest-181515.appspot.com/profile';
     }
 
   });
