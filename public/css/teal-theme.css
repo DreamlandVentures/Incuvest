@@ -1,0 +1,28 @@
+
+.btn, .intro-btn .btn,
+#s_stories .s_text:hover,
+.services-area i:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+#scroll-top, .spinner > div, .social i:hover,
+.option-box .gear-check{
+	background-color: #009688;
+}
+
+#work .work-single .work-link .caption {
+    background:rgba(0, 150, 136, 0.84);
+}
+
+.team_single ul li i{
+	color: #009688;
+}
+
+.btn:hover, #scroll-top:hover{
+    background-color: #4DB6AC;
+}
+
+.option-box .color-option{
+	border: 4px solid #009688;
+ }
+

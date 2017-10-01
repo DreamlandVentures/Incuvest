@@ -1,0 +1,707 @@
+
+
+/*---------TABLE OF CONTENTS--------*/
+
+	/* 1. NORMAL STYLES
+	-------------------------------------------------*/
+	/* 2. NAVBAR SECTION STYLES
+	-------------------------------------------------*/
+	/* 3. STYLE FOR STICKY NAVBAR
+	-------------------------------------------------*/
+	/* 4. HEADER SECTION STYLES
+	-------------------------------------------------*/
+	/* 5. SUCCESS STORIES SECTION STYLES
+	-------------------------------------------------*/
+	/* 6. SERVICESS SECTION STYLES
+	-------------------------------------------------*/
+	/* 7. WORK SECTION STYLES
+	-------------------------------------------------*/
+	/* 8. TEAM SECTION STYLES
+	-------------------------------------------------*/
+	/* 9. TESTIMONIAL SECTION STYLES
+	-------------------------------------------------*/
+	/* 10. CLIENTS SECTION STYLES
+	-------------------------------------------------*/
+	/* 11. CONTACT SECTION STYLES
+	-------------------------------------------------*/
+	/* 12. FOOTER SECTION STYLES
+	-------------------------------------------------*/
+	/* 13. SCROLL TO TOP BUTTON STYLES
+	-------------------------------------------------*/
+	/* 14. PRELOADER STYLES
+	-------------------------------------------------*/
+	/* 15. TOOLBOX STYLES
+	-------------------------------------------------*/
+
+
+
+
+/* 1. NORMAL STYLES
+	-------------------------------------------------*/
+body {
+    width: 100%;
+    height: 100%;
+	}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,h2,h3,h4,p, .btn, .address, .navbar {
+	font-family:'Roboto', sens-serif;
+}
+
+h1,h2{
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2{
+	padding-top: 75px;
+	padding-bottom: 45px;
+}
+
+ul{
+	padding-left: 0px;
+}
+
+p{
+	line-height: 1.6;
+}
+
+.btn{
+	border:none;
+}
+
+/* 2. NAVBAR SECTION STYLES
+	-------------------------------------------------*/
+
+.navbar{
+	background-color:#fff;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-brand{
+	font-size:2em;
+}
+.navbar-right{
+	font-size:1em;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	color:#fff;
+}
+
+/* 3. STYLE FOR STICKY NAVBAR
+	-------------------------------------------------*/
+
+@media(min-width:767px) {
+
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+}
+
+/* 4. HEADER SECTION STYLES
+	-------------------------------------------------*/
+
+.intro{
+	margin:250px 0px 220px 0px;
+}
+
+.header-section{
+	background:url('../img/bg/bg-1.jpg');
+	background-size:cover;
+	background-repeat: repeat-y;
+	background-position:center center;
+}
+
+.intro{
+	position:relative;
+	z-index:3;
+}
+.intro > p {
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0;
+}
+
+.intro > h1 {
+	margin: 0;
+	font-size: 56px;
+	margin-bottom: 70px;
+}
+.intro-text{
+	color:#ffffff;
+	/* background-color:#237FF0; */
+}
+
+.intro-btn .btn{
+	font-size:16px;
+	font-weight: 500;
+	text-transform:uppercase;
+	color:#fff;
+	border-radius:50px;
+	padding:15px 30px;
+	margin-top:0px;
+	margin-right:15px;
+}
+
+.intro-btn .btn:hover{
+	color:#fff;
+	background:none;
+	border:2px solid #fff;
+}
+
+/* 5. SUCCESS STORIES SECTION STYLES
+	-------------------------------------------------*/
+#services{
+	text-align:center;
+	padding-bottom: 45px;
+	/*background-image:url("../success_story.jpg");
+	background-size:cover;*/
+
+}
+#services  .s_text{
+	text-align:justify;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+	padding-bottom: 5px;
+}
+#services .s_text:hover{
+	color:#fff
+}
+
+#services  .s_text h3{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#services .s_bottom .angle_ico{
+	text-shadow: 1px 1px 1px #888888;
+	text-align:center;
+}
+#services .angle_ico i{
+	color:#707070
+}
+#services .angle_ico:hover i{
+	color:#fff;
+}
+
+#services .btn_s{
+	padding-top: 70px;
+}
+#services .btn_s:hover{
+	-webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+
+/* 6. SERVICESS SECTION STYLES
+	-------------------------------------------------*/
+
+
+/* 7. WORK SECTION STYLES
+-------------------------------------------------*/
+#work{
+	padding-bottom: 45px;
+}
+
+#work .work-single {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#work .work-single a:hover {
+	background-color: red;
+}
+
+#work .work-single .work-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#work .work-single .work-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#work .work-single .work-link .caption:hover {
+    opacity: 1;
+}
+
+#work .work-single .work-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#work .work-single .work-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#work .work-single .work-link .caption .caption-content h3
+{
+   text-transform: uppercase;
+}
+
+#work * {
+    z-index: 2;
+}
+
+.work-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.work-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.work-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.work-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.work-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.work-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.work-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.work-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.work-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/* 8. TEAM SECTION STYLES
+	-------------------------------------------------*/
+	#team{
+		background-color:#C0C0C0;
+		padding-bottom:45px;
+	}
+	.team_single{
+		padding:10px;
+		text-align:center;
+		border:1px solid #C0C0C0;
+		background-color:#fff;
+	}
+	.team_single  span{
+		font-size:16px;
+		font-style:italic;
+	}
+	.team_single  p{
+		text-align:justify;
+	}
+	.team_single img{
+		transition:all .3s ease-in-out;
+		max-width:100%;
+		text-align: center;
+	}
+	.team_single img:hover{
+		transform:scale(1.1,1.1);
+	}
+
+	.team_single ul{
+		list-style-type:none;
+		text-align:center;
+		margin:0px;
+		padding-top: 10px;
+		padding-left: 0px;
+		padding-bottom:15px;
+	}
+	.team_single ul li{
+		display:inline;
+		padding:0px 10px 0px 0px;
+		margin:0px;
+	}
+	.team_single ul li i:hover{
+		color:#C0C0C0;
+	}
+
+/* 9. TESTIMONIAL SECTION STYLES
+-------------------------------------------------*/
+
+#testimonials{
+	background-color:#fff;
+	margin:0px;
+	padding-bottom: 45px;
+}
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+	}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+/* 10. CLIENTS SECTION STYLES
+-------------------------------------------------*/
+
+.clients{
+	overflow:hidden;
+	background:#8a8a8a
+}
+.clients ul{
+	width:100%;
+	display:table;
+	text-align:center;
+	padding:21px 0 22px
+}
+.clients ul li{
+	display:table-cell;
+	vertical-align:middle
+}
+.clients ul img{
+	height:auto;
+	display:block;
+	max-width:100%
+}
+.clients ul img:hover{
+	opacity:.8
+}
+
+
+/* 11. CONTACT SECTION STYLES
+-------------------------------------------------*/
+
+#contact{
+	background-color:#C0C0C0;
+	padding-bottom: 45px;
+}
+
+.address{
+	padding-left:75px;
+}
+
+
+/* 12. FOOTER SECTION STYLES
+-------------------------------------------------*/
+.footer-section {
+	background: #212731;
+	color: #fff;
+	padding-top: 80px;
+}
+
+.single-widget {
+	margin-bottom: 70px;
+}
+
+.single-widget h4 {
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.single-widget ul {
+	list-style: none;
+}
+
+.single-widget ul li {
+	margin-bottom: 8px;
+}
+
+.single-widget ul li a{
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.single-widget ul li a:hover {
+	color: #E0E0E0;
+}
+
+.single-widget .input-group .input-group-btn .btn{
+	background-color: red;
+}
+
+.single-md-widget .stream ul li{
+	display:inline;
+	list-style:none;
+}
+
+.single-md-widget .tweet-content article{
+	display:inline;
+}
+
+
+.social a{
+	color: #ffffff;
+}
+
+.social a:hover{
+    color: #E0E0E0;
+}
+.dev a{
+	color: #ffffff;
+}
+.dev a:hover{
+    color:#E0E0E0;
+}
+.twitter{
+	border-left: 1px solid #ffffff;
+}
+
+
+/* 13. SCROLL TO TOP BUTTON STYLES
+-------------------------------------------------*/
+
+#scroll-top{
+	width:50px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 9999;
+	display: none;
+	cursor: pointer;
+}
+
+
+/* 14. PRELOADER STYLES
+-------------------------------------------------*/
+
+.loading-overlay {
+    background:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:99999
+}
+
+.spinner {
+  margin: 300px auto;
+  width: 60px;
+  height: 60px;
+  position:relative;
+
+}
+
+.spinner > div {
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+/* 15. TOOLBOX STYLES
+-------------------------------------------------*/
+
+ .option-box{
+	position:fixed;
+	top:120px;
+	left:0px;
+	z-index:9999
+
+ }
+
+ .option-box .color-option{
+	float:left;
+	background:#333;
+	color:#fff;
+	padding:10px;
+	width:200px;
+	display:none;
+ }
+
+ .option-box .color-option ul li {
+	width:20px;
+	height:20px;
+	background:#3F51B5;
+	display:inline-block;
+	margin-right:4px;
+	cursor:pointer;
+ }
+
+
+
+ /* Style for rotation of gear icon*/
+
+ @-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+
+
+.option-box .gear-check{
+	padding:5px;
+	background:#3F51B5;
+	color:#fff;
+	padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor:pointer;
+ }
+
+ .option-box .gear-check i{
+	 -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ }

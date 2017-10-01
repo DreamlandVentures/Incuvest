@@ -1,0 +1,147 @@
+/*RESPONSIVE STYLES
+	-------------------------------------------------*/
+	
+/*Responsive style for work section*/
+
+@media(min-width:767px) {
+    #work .work-single {
+        margin: 0 0 30px;
+    }
+}
+	
+/*Responsive style for 991 devices*/
+
+@media only screen and (max-width:991px){
+	.clients ul li{
+		min-width:130px;
+		margin:0 2% 20px;
+		display:inline-block;
+		vertical-align:middle
+	}
+	.clients ul img{
+		width:100%;
+		max-width:inherit
+	}
+}
+
+/*Responsive style for 768 devices*/
+
+@media(max-width:768px){
+     
+	.navbar{
+		text-align:center;
+	}
+	.navbar ul:first-child {
+		margin-top:10px;
+	}
+	
+	 #contact .address{
+        text-align: center;
+    }
+    .footer-section{
+        text-align: center;
+    }
+}
+
+/*Responsive style for 414 devices*/
+
+@media(max-width:414px){
+
+	.intro h1{
+		font-size:36px;
+		padding-bottom: 0px;
+	}
+	.intro p{
+		font-size:13px;
+		padding-top:0px;
+	}
+
+	.intro-btn .btn{
+		font-size:14px;
+		padding:15px;
+	}
+	.service-single{
+		padding-bottom:60px;
+	}
+
+	#testimonials{
+		padding-bottom: 10px;
+	}
+
+	#quote-carousel .carousel-indicators li {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		opacity: 0.4;
+		overflow: hidden;
+		transition: all .4s ease-in;
+		vertical-align: middle;
+	}
+	#quote-carousel .carousel-indicators .active {
+		width: 70px;
+		height: 70px;
+		opacity: 1;
+		transition: all .2s;
+	}
+	#contact{
+		text-align:center;
+	}
+	.address{
+		padding-left:0px;
+	}
+}
+
+/*Responsive style for 360 devices*/
+
+@media(max-width:360px){
+
+	.intro h1{
+		font-size:36px;
+		padding-bottom: 0px;
+	}
+	.intro p{
+		font-size:13px;
+		padding-top:0px;
+	}
+
+	.intro-btn .btn{
+		font-size:14px;
+		padding:15px;
+	}
+	.service-single{
+		padding-bottom:60px;
+	}
+
+	#testimonials{
+		padding-bottom: 10px;
+	}
+
+	#quote-carousel .carousel-indicators li {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		opacity: 0.4;
+		overflow: hidden;
+		transition: all .4s ease-in;
+		vertical-align: middle;
+	}
+	#quote-carousel .carousel-indicators .active {
+		width: 70px;
+		height: 70px;
+		opacity: 1;
+		transition: all .2s;
+	}
+	#contact{
+		text-align:center;
+	}
+	.address{
+		padding-left:0px;
+	}
+}
+
