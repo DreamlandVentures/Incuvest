@@ -31,6 +31,12 @@ app.get('/kidmoto',function(req,res){
 app.get('/pinatafc',function(req,res){
   res.render('pinata');
 });
+app.get('/flydoc',function(req,res){
+  res.render('flydoc');
+});
+app.get('/profile/flydoc',function(req,res){
+  res.render('flydoc',{layout:'inside.hbs'});
+});
 app.get('/profile/kidmoto',function(req,res){
   res.render('kidmoto',{layout:'inside.hbs'});
 });

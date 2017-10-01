@@ -17,8 +17,15 @@ $(window).load(function() {
       $(this).remove();
     });
   });
-
-
+  $('#pinatalink').click(function(){
+    window.location='http://localhost:8080/pinatafc';
+  });
+  $('#kidmotolink').click(function(){
+  window.location='http://localhost:8080/kidmoto';
+  });
+  $('#flydoclink').click(function(){
+    window.location='http://localhost:8080/flydoc';
+  });
   //Login Elements
   $('.logout').click(function(){
     window.location='http://localhost:8080';
