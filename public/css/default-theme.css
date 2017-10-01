@@ -7,20 +7,20 @@
 .navbar-default .navbar-nav>.active>a:hover,
 #scroll-top, .spinner > div, .social i:hover,
 .option-box .gear-check{
-	background-color: #FF9800;
+	background-color: #00adef;
 }
 
 #work .work-single .work-link .caption {
-    background:rgba(255, 155, 0, 0.84);
+    background-color:#00adef;
 }
 
 .team_single ul li i{
-	color: #FF9800;
+	color: #00adef;
 }
 
 .btn:hover, #scroll-top:hover{
-    background-color: #FFCC80;
+    background-color: #c8f0ff;
 }
 .logbtn:hover{
-    background-color: #FFCC80 !important;
+    background-color: #c8f0ff !important;
 }

@@ -4,17 +4,6 @@ var app=express();
 var path = require('path');
 var mongoose = require('mongoose');
 var login = require('./routes/route');
-var options = {
-    server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-    replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
-};
-
-var Schema = mongoose.Schema;
-mongoose.connect('mongodb://root:venture@ds147454.mlab.com:47454/wuepabase', options);
-
-var conn = mongoose.connection;
-
-
 
 app.engine('hbs', handlebars({
   layoutsDir: path.join(__dirname, 'views', 'layouts'),
@@ -29,10 +18,24 @@ app
   .set('view engine', 'hbs')
   .set('views', path.join(__dirname, 'views'));
 
-app.get('/profiles',login);
+app.get('/profile',function(req,res){
+  res.render('profile',{layout:'inside.hbs'});
+});
 
 app.get('/',function(req,res){
   res.render('index');
+});
+app.get('/kidmoto',function(req,res){
+  res.render('kidmoto');
+});
+app.get('/pinatafc',function(req,res){
+  res.render('pinata');
+});
+app.get('/profile/kidmoto',function(req,res){
+  res.render('kidmoto',{layout:'inside.hbs'});
+});
+app.get('/profile/pinatafc',function(req,res){
+  res.render('pinata',{layout:'inside.hbs'});
 });
 
 
