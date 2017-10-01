@@ -2,8 +2,9 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
 .updates{
     margin:0 auto;
-    padding-left: 150px;
+    padding-left: 75px;
     margin-top: 0px;
+    font-size: 12px;
 }
 .glyphprogress {
     background: #fff;
