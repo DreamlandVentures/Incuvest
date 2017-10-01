@@ -29,7 +29,9 @@ app
   .set('view engine', 'hbs')
   .set('views', path.join(__dirname, 'views'));
 
-app.get('/profiles',login);
+app.get('/profile',function(req,res){
+  res.render('profile',{layout:'inside.hbs'});
+});
 
 app.get('/',function(req,res){
   res.render('index');

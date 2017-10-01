@@ -1,20 +1,34 @@
 // Loading Screen
 
-$(window).load(function () {
+$(window).load(function() {
 
-    "use strict";
+  "use strict";
 
-    // Loading Elements
+  // Loading Elements
 
-    $(".loading-overlay .spinner").fadeOut(2000, function () {
+  $(".loading-overlay .spinner").fadeOut(2000, function() {
 
-        // Show The Scroll
+    // Show The Scroll
 
-        $("body").css("overflow", "auto");
+    $("body").css("overflow", "auto");
 
-        $(this).parent().fadeOut(2000, function () {
+    $(this).parent().fadeOut(2000, function() {
 
-            $(this).remove();
-        });
+      $(this).remove();
     });
+  });
+
+
+  //Login Elements
+  $('.logout').click(function(){
+    window.location='http://localhost:8080';
+  });
+  $('.modal-footer').click(function() {
+    if ($("#uPassword").val() === '') {
+      alert('No password');
+    } else {
+      window.location='http://localhost:8080/profile';
+    }
+
+  });
 });
