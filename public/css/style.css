@@ -122,11 +122,22 @@ p{
 }
 
 .header-section{
-	background:url('../img/bg/bg-1.jpg');
+
+	background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../img/bg/rsz_city.jpg');
+
 	background-size:cover;
 	background-repeat: repeat-y;
 	background-position:center center;
+
+
 }
+
+
 
 .intro{
 	position:relative;
